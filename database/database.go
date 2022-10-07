@@ -1,11 +1,14 @@
 package database
 
+import "fmt"
+
 var connection string
 
-func init() {
+func init(){
+	fmt.Println("Init dipanggil")
 	connection = "MySQL"
 }
 
-func getDatabase() string {
+func GetDatabase() string {
 	return connection
 }
